@@ -12,7 +12,7 @@ message1.manifest.name = "@functions-io-labs/math.sum";
 
 context.security = {};
 context.security.tokenUser = {};
-context.security.tokenUser.roles = ["papel1","papel2"];
+context.security.tokenUser.roles = ["papel1", "papel2"];
 
 moduleTest(message1, context).then(function(result){
     console.log("sucess! ", result);
