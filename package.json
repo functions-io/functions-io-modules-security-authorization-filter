@@ -1,6 +1,6 @@
 {
   "name": "@functions-io-modules/security.authorization.filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "security authorization filter",
   "category": "test",
   "public": true,
