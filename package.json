@@ -10,8 +10,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "functions-io-core": "0.*"
   }
