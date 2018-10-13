@@ -13,8 +13,11 @@ message1.manifest.name = "@functions-io-labs/math.sum";
 context.security = {};
 context.security.tokenUser = {};
 context.security.tokenUser.roles = ["papel1", "papel2"];
+context.manifestObj = {};
+context.manifestObj.packageObj = {};
+context.manifestObj.packageObj.public = false;
 
-moduleTest(message1, context).then(function(result){
+moduleTest.process(message1, context).then(function(result){
     console.log("sucess! ", result);
 }, function(err){
     console.log("err! ", err);

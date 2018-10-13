@@ -8,10 +8,17 @@ const assert = require("assert");
 const moduleTest = require("../");
 
 var message1 = {};
-message1.username = "admin";
-message1.password = "123";
+message1.manifest = {};
+message1.manifest.name = "@functions-io-labs/math.sum";
 
-moduleTest(message1, context).then(function(result){
+context.security = {};
+context.security.tokenUser = {};
+context.security.tokenUser.roles = ["papel1", "papel2"];
+context.manifestObj = {};
+context.manifestObj.packageObj = {};
+context.manifestObj.packageObj.public = false;
+
+moduleTest.process(message1, context).then(function(result){
     assert.strictEqual(typeof(result), "string");
 }, function(err){
     assert.strictEqual(err, null);
