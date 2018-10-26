@@ -1,9 +1,8 @@
 {
   "name": "@functions-io-modules/security.authorization.filter",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "security authorization filter",
   "category": "test",
-  "public": true,
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
